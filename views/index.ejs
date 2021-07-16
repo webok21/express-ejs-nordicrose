@@ -1,0 +1,17 @@
+<%- include('./partials/head') %>
+    <%- include('./partials/navAll') %>
+
+
+        <main id="index-main">
+            <h1>All articles</h1>
+            <% data.forEach(element=> {%>
+                <div>
+                    <a href="/blog/<%=element.id%>"><img src="<%= element.url %>" alt="article-img"></a>
+                    <h2>
+                        <%= element.title %>
+                    </h2>
+                </div>
+                <% }) %>
+
+        </main>
+        <%- include('./partials/footer') %>
