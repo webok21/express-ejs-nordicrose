@@ -8,34 +8,41 @@
                     <%= article.title %>
                 </h1>
                 <img src="<%= article.url %>" alt="article-img">
-                <div id="blog-entry">
+                <div id="blog-info">
                     <img src="<%= article.author_bild %>" alt="article-img">
                     <div>
-                        <p>
+                        <p class="author">
                             <%= article.author %>
                         </p>
                         <div>
                             <p>
-                                <%= article.published_at %>
-
+                                <%= article.published_at %> ·
                                     <%= article.duration %> min read
                             </p>
                         </div>
                     </div>
                 </div>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti sunt suscipit voluptatum quia,
-                    quae ducimus enim iste, aliquid, illum fugit error ut voluptas animi nam!
-                    <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minus temporibus ex debitis dolores
-                    fuga doloremque tempore accusantium hic. Dolorum.
-                    <br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime temporibus non hic quasi et fugiat.
-                    Adipisci, delectus iure odio tenetur autem eveniet voluptate amet consequatur laborum voluptas
-                    deserunt reprehenderit veniam!
-                    <br>
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, corrupti.
-                </p>
+                <div class="blog-text">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti sunt suscipit voluptatum
+                        quia,
+                        quae ducimus enim iste, aliquid, illum fugit error ut voluptas animi nam!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem minus temporibus ex debitis
+                        dolores
+                        fuga doloremque tempore accusantium hic. Dolorum.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime temporibus non hic quasi et
+                        fugiat.
+                        Adipisci, delectus iure odio tenetur autem eveniet voluptate amet consequatur laborum voluptas
+                        deserunt reprehenderit veniam!
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus, corrupti.
+                    </p>
+                </div>
             </section>
             <article class="articles">
                 <h1>What to read next</h1>
