@@ -31,6 +31,7 @@ p {
 }
 ul {
     display: flex;
+    overflow: hidden;
 }
 .header-nav li {
     list-style: none;
@@ -123,7 +124,6 @@ footer div {
 /* NEW ARTICLE STYLING */
 
 #newArticle-main h1:first-of-type {
-    font-weight: 400;
     font-size: 2.2em;
     margin-top: 10vh;
 }
@@ -163,6 +163,8 @@ input[type=submit] {
 #blog-info {
     display: flex; 
     text-align: left;
+    border-top: 1px solid #000;
+    padding-top: 2%;
     margin: 2% 18%;
 }
 #blog-info img {
@@ -176,6 +178,10 @@ input[type=submit] {
 .blog-text p {
     margin-top: 3%;
 }
+.blog-text p:last-of-type {
+    border-bottom: 1px solid #000;
+    padding-bottom: 10%; 
+}
 .author {
     font-weight: bold;
     text-transform: uppercase;
@@ -183,7 +189,7 @@ input[type=submit] {
 .articles {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 6vh 10%;
+    padding: 6vh 10%;
 }
 .articles h1 {
     grid-area: 1/1/2/4;
@@ -196,9 +202,55 @@ input[type=submit] {
     padding: 3% 10%;
 }
 
-
 /* 404-page */
 
 #error-main {
     min-height: 45vh;
+}
+
+
+@media (max-width: 425px) {
+    *{
+        font-size: 12px;
+    }
+    .header-nav img {
+        width: 80%;
+    }
+    #index-main, .articles {
+        grid-template-columns: 1fr;
+        padding: 8vh 0%;
+    }
+    main img {
+        width: 95%;
+    }
+    main img:first-of-type {
+        width: 100%;
+    }
+    #index-main h1 {
+        grid-area: 2/1/2/2;
+    }
+    #index-main div:first-of-type {
+        font-size: 2em;    
+    }
+    #index-main div:first-of-type {
+        grid-area: 1/1/2/2;
+    }
+    #index-main div:not(:first-of-type) h2, .articles h2 {
+        padding: 3% 10%;
+    }
+    .grid-wrapper h1 {
+        margin: 10vh 2% 10vh;
+    }
+    .articles h1 {
+        grid-area: 1/1/2/2;
+    }
+    #blog-info {
+        margin: 7% 5% 20%;
+    }
+    .blog-text {
+        margin: 2% 5%;
+    }
+    .blog-text p {
+        margin-top: 10%;
+    }
 }
