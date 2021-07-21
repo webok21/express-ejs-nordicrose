@@ -213,8 +213,14 @@ input[type=submit] {
     *{
         font-size: 12px;
     }
+    .header-nav li a {
+        font-size: 0.6em;
+    }
+    .header-nav ul {
+        display: inline;
+    }
     .header-nav img {
-        width: 80%;
+        width: 75%;
     }
     #index-main, .articles {
         grid-template-columns: 1fr;
